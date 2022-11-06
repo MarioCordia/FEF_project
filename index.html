@@ -5,22 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ecommerce - Inicio</title>
-
-    <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1 style="text-align:center">Tienda de <span style="color:#037BC0">Muebles</span></h1>
+        <h1>Tienda de <span class="color">Muebles</span></h1>
     </header>
 
     <nav>
@@ -39,26 +33,23 @@
     </div>
 
     <div class="container">
-        <h2>Nuestros Productos</h2>
-        <!-- Una columna -->
-        <div class="one">
-            <div class="image">
-                <img src="images/producto1.jpg" alt="primer producto">
+        <header>
+            <h2>Nuestros Productos</h2>
+        </header>
+        <div class="one b">
+            <div style="width:60%;">
+                <img src="./images/producto1.jpg" alt="">
             </div>
-            <div class="text">
+            <div id="main">
                 <h3>Producto 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button1">Agregar al carrito</button>
+                <button class="button">Agregar al carrito</button>
             </div>
         </div>
-
-        <!-- Dos columnas-->
-        <div class="two">
-            <div class="full">
-                <img src="images/producto2.jpg" alt="primer producto">
-            </div>
+        <div class="two b">
+            <img src="./images/producto2.jpg" alt="">
             <div class="details">
                 <h3>Producto 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -67,8 +58,8 @@
                 <button class="button">Agregar al carrito</button>
             </div>
         </div>
-        <div class="two">
-            <div class="full"><img src="images/producto3.jpg" alt="primer producto"></div>
+        <div class="two b">
+            <img src="./images/producto3.jpg" alt="">
             <div class="details">
                 <h3>Producto 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -77,10 +68,8 @@
                 <button class="button">Agregar al carrito</button>
             </div>
         </div>
-
-        <!-- Tres columnas-->
-        <div class="three">
-            <div class="full"><img src="images/producto4.jpg" alt="primer producto"></div>
+        <div class="three b">
+            <img src="./images/producto4.jpg" alt="">
             <div class="details">
                 <h3>Producto 4</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -89,8 +78,8 @@
                 <button class="button">Agregar al carrito</button>
             </div>
         </div>
-        <div class="three">
-            <div class="full"><img src="images/producto5.jpg" alt="primer producto"></div>
+        <div class="three b">
+            <img src="./images/producto5.jpg" alt="">
             <div class="details">
                 <h3>Producto 5</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -99,8 +88,8 @@
                 <button class="button">Agregar al carrito</button>
             </div>
         </div>
-        <div class="three">
-            <div class="full"><img src="images/producto6.jpg" alt="primer producto"></div>
+        <div class="three b">
+            <img src="./images/producto6.jpg" alt="">
             <div class="details">
                 <h3>Producto 6</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -110,10 +99,9 @@
             </div>
         </div>
 
-        <h2>Categorías de Productos</h2>
-        <!-- Tres columnas-->
+        <h2 class="sub-header">Categorías de Productos</h2>
         <div class="three">
-            <a class="no-link" href="#">
+            <a href="#">
                 <img src="images/categoria1.jpg" alt="">
                 <div>
                     <h2>Oficina</h2>
@@ -121,7 +109,7 @@
             </a>
         </div>
         <div class="three">
-            <a class="no-link" href="#">
+            <a href="#">
                 <img src="images/categoria2.jpg" alt="">
                 <div>
                     <h2>Hogar</h2>
@@ -129,7 +117,7 @@
             </a>
         </div>
         <div class="three">
-            <a class="no-link" href="#">
+            <a href="#">
                 <img src="images/categoria3.jpg" alt="">
                 <div>
                     <h2>Cocina</h2>
@@ -137,44 +125,43 @@
             </a>
         </div>
 
-        <!-- Tres columnas-->
-        <div class="three">
-            <div class="details-color">
-                <h3 style="color:black">Categorías</h3>
+        <div class="three black prueba">
+            <div>
+                <h3>Categorías</h3>
                 <ul>
-                    <li><a class="no-link" href="#">Cocina</a></li>
-                    <li><a class="no-link" href="#">Oficina</a></li>
-                    <li><a class="no-link" href="#">Jardín</a></li>
-                    <li><a class="no-link" href="#">Cochera</a></li>
-                    <li><a class="no-link" href="#">Dormitorios</a></li>
+                    <li><a href="#">Cocina</a></li>
+                    <li><a href="#">Oficina</a></li>
+                    <li><a href="#">Jardín</a></li>
+                    <li><a href="#">Cochera</a></li>
+                    <li><a href="#">Dormitorios</a></li>
                 </ul>
             </div>
         </div>
-        <div class="three">
-            <div class="details-color">
-                <h3 style="color:black">Sobre Nosotros</h3>
+        <div class="three black prueba">
+            <div>
+                <h3>Sobre Nosotros</h3>
                 <ul>
-                    <li><a class="no-link" href="#">Nuestra historia</a></li>
-                    <li><a class="no-link" href="#">Misión, visión y valores</a></li>
-                    <li><a class="no-link" href="#">Carrera</a></li>
-                    <li><a class="no-link" href="#">Políticas de privacidad</a></li>
-                    <li><a class="no-link" href="#">Términos del servicio</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Misión, visión y valores</a></li>
+                    <li><a href="#">Carrera</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Términos del servicio</a></li>
                 </ul>
             </div>
         </div>
-        <div class="three">
-            <div class="details-color">
-                <h3 style="color:black">Soporte</h3>
+        <div class="three black prueba">
+            <div>
+                <h3>Soporte</h3>
                 <ul>
-                    <li><a class="no-link" href="#">Preguntas frecuentes</a></li>
-                    <li><a class="no-link" href="#">Ayuda en línea</a></li>
-                    <li><a class="no-link" href="#">Confianza y seguridad</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Ayuda en línea</a></li>
+                    <li><a href="#">Confianza y seguridad</a></li>
                 </ul>
             </div>
         </div>
 
         <footer>
-           <p style="color:black">Todos los derechos reservados. TiendaMuebles</p>
+            <p>Todos los derechos reservados. TiendaMuebles</p>
         </footer>
     </div>
 </body>

@@ -1,99 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap");
 
-body {
-  font-family: "Playfair Display", serif;
-  /*font-family: 'Raleway', sans-serif; */
+* {
   margin: 0;
+  padding: 0;
 }
 
-p,
-li {
-  font-family: "Raleway", sans-serif;
-  color: white;
+html {
+  font-size: 62.5;
 }
 
-p.thick {
-  font-weight: bold;
+body {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  /* TODO: tamaño de imagen 1.6rem */
+  line-height: 2;
 }
 
-.container {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
-
-  display: grid;
-
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-
-  gap: 1%;
-  padding: 1%;
-
-  box-sizing: border-box;
-}
-
-.full {
-  background-color: #037bc1;
-}
-
-.container h2 {
-  grid-column-start: 1;
-  grid-column-end: 7;
-
+h1 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 3rem;
   text-align: center;
-
-  padding: 5px;
-}
-.container h3 {
-  color: white;
 }
 
-.one {
-  grid-column-start: 1;
-  grid-column-end: 7;
-
-  display: flex;
-  align-items: center;
-
-  background-color: #037bc1;
+h2 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 2rem;
 }
 
-.two {
-  grid-column-end: span 3;
+h3 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 1.75em;
 }
 
-.three {
-  grid-column-end: span 2;
+ul {
+  padding-top: 10%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 img {
   width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
-.text {
-  width: 40%;
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ! Grid */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 1% auto;
+
+  display: grid;
+  gap: 1%;
+
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.container > * {
+  display: flex;
   text-align: center;
-  padding: 1%;
-  font-size: 2vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.image {
-  width: 60%;
+.container header,
+.sub-header,
+.one,
+.container footer {
+  grid-column: 1 / -1;
 }
 
-.details {
-  text-align: center;
-  word-wrap: break-word;
-  padding: 10px;
+.two {
+  grid-column: span 3;
+  flex-direction: column;
+}
 
+.three {
+  grid-column: span 2;
+  flex-direction: column;
+}
+
+/* ! Contenido */
+.one,
+.two,
+.three {
+  color: white;
+}
+
+.b {
   background-color: #037bc1;
 }
 
-.details-color {
-  text-align: center;
-  word-wrap: break-word;
-  padding: 10px;
+.g {
+  background-color: gray;
+}
+
+.black {
+  color: black;
+}
+
+.thick {
+  font-weight: bold;
+  font-size: min(2.5vw, 36px);
+}
+
+.details {
+  padding: 1%;
+  padding-bottom: 5%;
+}
+
+.prueba {
+  justify-content: flex-start;
 }
 
 .button {
@@ -101,47 +129,18 @@ img {
   border-radius: 2em;
   color: white;
   padding: 0.3em 1.2em;
-  text-align: center;
   cursor: pointer;
   background-color: #8cbc01;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  max-width: 100%;
-  font-size: 1.75vw;
+  font-size: min(2vw, 36px);
 }
 
-.button1 {
-    border: none;
-    border-radius: 2em;
-    color: white;
-    padding: 0.3em 1.2em;
-    text-align: center;
-    cursor: pointer;
-    background-color: #8cbc01;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    max-width: 100%;
-    font-size: 2vw;
-  }
-
-.no-link {
-  color: black;
-  text-decoration: none;
+#main {
+  width: 40%;
+  padding: 1%;
 }
 
-.container footer {
-  grid-column-start: 1;
-  grid-column-end: 7;
-
-  text-align: center;
-
-  padding: 5px;
-}
-
-.container ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: black;
+.color {
+  color: #037bc0;
 }
