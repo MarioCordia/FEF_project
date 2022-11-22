@@ -9,21 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="d-none d-md-block">
         <h1>Tienda de <span class="color">Muebles</span></h1>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a> |
-        <a href="#">Nosotros</a> |
-        <a href="#">Tienda</a> |
-        <a href="#">Blog</a> |
-        <a href="#">Galería</a> |
-        <a href="#">Contacto</a>
+    <nav class="navbar navbar-expand-md py-0 sticky-top bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand d-md-none">
+                <span>
+                    <h1>Tienda de <span class="color">Muebles</span></h1>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="hero">
@@ -33,11 +48,11 @@
     </div>
 
     <div class="container">
-        <header>
+        <header class="header">
             <h2>Nuestros Productos</h2>
         </header>
         <div class="one b">
-            <div style="width:60%;">
+            <div id="first">
                 <img src="./images/producto1.jpg" alt="">
             </div>
             <div id="main">
@@ -45,90 +60,96 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
-        <div class="two b">
+        <div class="two b scnd1">
             <img src="./images/producto2.jpg" alt="">
             <div class="details">
                 <h3>Producto 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
-        <div class="two b">
+        <div class="two b scnd2">
             <img src="./images/producto3.jpg" alt="">
             <div class="details">
                 <h3>Producto 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
-        <div class="three b">
+        <div class="three b thrd1">
             <img src="./images/producto4.jpg" alt="">
             <div class="details">
                 <h3>Producto 4</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
-        <div class="three b">
+        <div class="three b thrd2">
             <img src="./images/producto5.jpg" alt="">
             <div class="details">
                 <h3>Producto 5</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
-        <div class="three b">
+        <div class="three b thrd3">
             <img src="./images/producto6.jpg" alt="">
             <div class="details">
                 <h3>Producto 6</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p class="thick">$12,000.00</p>
-                <button class="button">Agregar al carrito</button>
+                <button class="btn btn-success">Agregar al carrito</button>
             </div>
         </div>
 
         <h2 class="sub-header">Categorías de Productos</h2>
-        <div class="three">
+        <div class="three thrd4">
             <a href="#">
-                <img src="images/categoria1.jpg" alt="">
+                <div class="card-img">
+                    <img src="images/categoria1.jpg" alt="">
+                </div>
                 <div>
                     <h2>Oficina</h2>
                 </div>
             </a>
         </div>
-        <div class="three">
+        <div class="three thrd5">
             <a href="#">
-                <img src="images/categoria2.jpg" alt="">
+                <div class="card-img">
+                    <img src="images/categoria2.jpg" alt="">
+                </div>
                 <div>
                     <h2>Hogar</h2>
                 </div>
             </a>
         </div>
-        <div class="three">
+        <div class="three thrd6">
             <a href="#">
-                <img src="images/categoria3.jpg" alt="">
+                <div class="card-img">
+                    <img src="images/categoria3.jpg" alt="">
+                </div>
                 <div>
                     <h2>Cocina</h2>
                 </div>
             </a>
         </div>
 
-        <div class="three black top">
+        <div class="three black top thrd7">
             <div>
                 <h3>Categorías</h3>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Cocina</a></li>
                     <li><a href="#">Oficina</a></li>
                     <li><a href="#">Jardín</a></li>
@@ -137,10 +158,10 @@
                 </ul>
             </div>
         </div>
-        <div class="three black top">
+        <div class="three black top thrd8">
             <div>
                 <h3>Sobre Nosotros</h3>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Nuestra historia</a></li>
                     <li><a href="#">Misión, visión y valores</a></li>
                     <li><a href="#">Carrera</a></li>
@@ -149,10 +170,10 @@
                 </ul>
             </div>
         </div>
-        <div class="three black top">
+        <div class="three black top thrd9">
             <div>
                 <h3>Soporte</h3>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#">Ayuda en línea</a></li>
                     <li><a href="#">Confianza y seguridad</a></li>
@@ -160,10 +181,12 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="footer container-xl">
             <p>Todos los derechos reservados. TiendaMuebles</p>
         </footer>
     </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

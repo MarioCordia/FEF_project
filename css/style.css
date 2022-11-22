@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  /* TODO: tamaño de imagen 1.6rem */
+  line-height: 2;
+}
+
+h1 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: Playfair, "Times New Roman", Times, serif;
+  font-size: 1.75em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ! Grid */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 1% auto;
+
+  display: grid;
+  gap: 1%;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-template-areas:
+    "header header header header header header"
+    "one one one one one one"
+    "scnd1 scnd1 scnd1 scnd2 scnd2 scnd2"
+    "thrd1 thrd1 thrd2 thrd2 thrd3 thrd3"
+    "sub-header sub-header sub-header sub-header sub-header sub-header"
+    "thrd4 thrd4 thrd5 thrd5 thrd6 thrd6"
+    "thrd7 thrd7 thrd8 thrd8 thrd9 thrd9"
+    "footer footer footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.one {
+  grid-area: one;
+}
+
+.scnd1 {
+  grid-area: scnd1;
+}
+
+.scnd2 {
+  grid-area: scnd2;
+}
+
+.thrd1 {
+  grid-area: thrd1;
+}
+
+.thrd2 {
+  grid-area: thrd2;
+}
+
+.thrd3 {
+  grid-area: thrd3;
+}
+
+.sub-header {
+  grid-area: sub-header;
+}
+
+.thrd4 {
+  grid-area: thrd4;
+}
+
+.thrd5 {
+  grid-area: thrd5;
+}
+
+.thrd6 {
+  grid-area: thrd6;
+}
+
+.thrd7 {
+  grid-area: thrd7;
+}
+
+.thrd8 {
+  grid-area: thrd8;
+}
+
+.thrd9 {
+  grid-area: thrd9;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container > * {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container header,
+.sub-header,
+.one,
+.container footer {
+  grid-column: 1 / -1;
+}
+
+.two {
+  grid-column: span 3;
+  flex-direction: column;
+}
+
+.three {
+  grid-column: span 2;
+  flex-direction: column;
+}
+
+/* ! Contenido */
+#main {
+  width: 70%;
+  padding: 1%;
+}
+
+#first {
+  width: auto;
+}
+
+.one,
+.two,
+.three {
+  color: white;
+}
+
+.b {
+  background-color: #037bc1;
+}
+
+.g {
+  background-color: gray;
+}
+
+.black {
+  color: black;
+}
+
+.color {
+  color: #037bc0;
+}
+
+.thick {
+  font-weight: bold;
+  font-size: min(10vw, 30px);
+}
+
+.details {
+  padding: 1%;
+  padding-bottom: 5%;
+}
+
+.top {
+  justify-content: flex-start;
+}
+
+.three a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ! Efecto */
+.card-img {
+  overflow: hidden;
+}
+
+.card-img img {
+  transition: all 1s ease;
+}
+
+.card-img:hover img{
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header header header header header header"
+      "one one one one one one"
+      "scnd1 scnd1 scnd1 scnd1 scnd1 scnd1"
+      "scnd2 scnd2 scnd2 scnd2 scnd2 scnd2"
+      "thrd1 thrd1 thrd1 thrd1 thrd1 thrd1"
+      "thrd2 thrd2 thrd2 thrd2 thrd2 thrd2"
+      "thrd3 thrd3 thrd3 thrd3 thrd3 thrd3"
+      "sub-header sub-header sub-header sub-header sub-header sub-header"
+      "thrd4 thrd4 thrd4 thrd4 thrd4 thrd4"
+      "thrd5 thrd5 thrd5 thrd5 thrd5 thrd5"
+      "thrd6 thrd6 thrd6 thrd6 thrd6 thrd6"
+      "thrd7 thrd7 thrd7 thrd7 thrd7 thrd7"
+      "thrd8 thrd8 thrd8 thrd8 thrd8 thrd8"
+      "thrd9 thrd9 thrd9 thrd9 thrd9 thrd9"
+      "footer footer footer footer footer footer";
+  }
+
+  .one {
+    grid-column: 1 / -1;
+    flex-direction: column;
+  }
+
+  .two {
+    grid-column: 1 / -1;
+  }
+
+  .three {
+    grid-column: 1 / -1;
+  }
+  
+  #main {
+    width: 100%;
+  }
+}
